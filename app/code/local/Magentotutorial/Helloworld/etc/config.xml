@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>    
+    <modules>
+        <Magentotutorial_Helloworld>
+            <version>0.1.0</version>
+        </Magentotutorial_Helloworld>
+    </modules>
+    
+    <frontend> <!-- refers to a Magento Area. The "front end area is the public facing Magento shopping cart application." -->
+        <routers> <!--Sometimes the tag iteself will enclose configuration information about routers, other times it will enclose configuration information about the actual router object that do the rounting.-->
+            <helloworld>  <!---->
+                <use>standard</use>
+                <args>
+                    <module>Magentotutorial_Helloworld</module><!--This module tag should be the full name of your module, including your packagename/namespace name.
+                                                              This will be used by the system to locate your Controller files.-->
+                    <frontName>helloworld</frontName> <!-- when a router parses a URL, its get separated as follows.
+                                                        http://example.com/frontName/actionControllerName/actionMethod/
+                                                        so, by defining a value of "helloworld" in th <frontName> tags,
+                                                        we're telling Magento that we want the system to respond to URLs
+                                                        in the form of
+                                                        http://example.com/helloworld/*-->
+                </args>
+            </helloworld>
+        </routers>
+    </frontend>
+</config>

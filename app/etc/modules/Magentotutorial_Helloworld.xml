@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+LOCATION OF THIS FILE IS
+
+app/etc/Modules
+
+MAKE SURE YOU ARE PUTTING THIS FILE TO THIS LOCATION.
+
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<config>
+    <modules>
+        <Magentotutorial_Helloworld>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magentotutorial_Helloworld>
+    </modules>
+    
+</config>
+
